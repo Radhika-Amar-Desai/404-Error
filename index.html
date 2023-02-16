@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .four{
+      	display:inline-block;
+        font-family: Sans-serif;
+        font-size: 35vw;
+      }
+      #first-four{
+      	position:absolute;
+        top: 8vw;
+        left: 3vw;
+      }
+      #second-four{
+      	position:absolute;
+        left: 60vw;
+        top: 9vw;
+      }
+      .face {
+      	display:inline-block;
+        position: absolute;
+        top:15.5vw;
+        height: 23vw;
+        width: 15vw;
+        border: 1vw solid black;
+        border-radius: 15%;
+        left: 32vw;
+        background-color:white;
+        z-index:0;
+      }
+      .eye {
+        display: inline-block;
+        background-color: black;
+        height: 1.3vw;
+        width: 1.3vw;
+        border-radius: 100%;
+        animation: blink 2s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes blink {
+        from {
+          transform: rotateX(0deg);
+        }
+        to {
+          transform: rotateX(180deg);
+        }
+      }
+      #left-eye {
+        position: absolute;
+        left: 4vw;
+        top: 4.5vw;
+        
+        z-index:0;
+      }
+      #right-eye {
+        position: absolute;
+        left: 10vw;
+        top: 4.5vw;
+      }
+      .cheek {
+        display: inline-block;
+        height: 0.8vw;
+        width: 4.5vw;
+        background-color: #ffd1da;
+        border-radius: 50%;
+        z-index:0;
+      }
+      #left-cheek{
+      	position:absolute;
+        top:9vw;
+        left:1vw;
+        z-index:0;
+      }
+      #right-cheek{
+      	position:absolute;
+        top:9vw;
+        left:9vw;   
+        z-index:0;
+      }
+      .mouth{
+      	position:absolute;
+        left:5.8vw;
+        top:15vw;
+      	display:block;
+      	height:0.5vw;
+        width:3vw;
+        background-color:black;
+      }
+      .bottom{
+      	display:inline-block;
+      	position:absolute;
+        left:29.3vw;
+        top:22vw;
+      	height:20vw;
+        width:20vw;
+        border: 1vw solid black;
+        border-radius: 100%;
+        background-color:black;
+        z-index:-2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "four" id = "first-four">4</div>
+	<div class = "bottom">
+    </div>
+    <div class="face">
+      <div class="eye" id="left-eye"></div>
+      <div class="eye" id="right-eye"></div>
+      <div class="cheek" id="left-cheek"></div>
+      <div class="cheek" id="right-cheek"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class = "four" id = "second-four">4</div>
+  </body>
+</html>
+
